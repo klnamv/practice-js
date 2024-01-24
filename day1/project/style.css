@@ -1,6 +1,28 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: white;
+    width: 40vh;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+span {
+    font-size: large;
+    font-weight: 400;
+    padding: 1rem;
+    color:black;
+}
+
+button {
+    background: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
 }
