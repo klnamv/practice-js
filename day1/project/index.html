@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
-        <title>Change background</title>
+        <title>Create Your Own Palette</title>
     </head>
     <body>
-        <div class="container"> 
-            <span id="color"></span>
-            <button onClick="changeColors()">New Color</button>
-        </div>
+        <header>
+            <h1>Create your own palette</h1>
+        </header>
+        <main>
+            <p id="instructions">Press the spacebar to generate new color palettes!</p>            <section class="color-container" id="randcolor1" onClick="changeColors('randcolor1', 'color1')"> 
+                <span id="color1" class="color-code"></span>
+            </section>    
+            <section class="color-container" id="randcolor2" onClick="changeColors('randcolor2', 'color2')"> 
+                <span id="color2" class="color-code"></span>
+            </section>
+            <section class="color-container" id="randcolor3" onClick="changeColors('randcolor3', 'color3')"> 
+                <span id="color3" class="color-code"></span>
+            </section>
+            <section class="color-container" id="randcolor4" onClick="changeColors('randcolor4', 'color4')"> 
+                <span id="color4" class="color-code"></span>
+            </section>
+            <section class="color-container" id="randcolor5" onClick="changeColors('randcolor5', 'color5')"> 
+                <span id="color5" class="color-code"></span>
+            </section>
+        </main>
+        <footer>
+            <p>created by @klnamv</p>
+        </footer>
     </body>
 </html>
