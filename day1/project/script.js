@@ -26,3 +26,13 @@ document.addEventListener('keydown', function(event) {
 });
 
 window.onload = changeAllColors;
+
+function copyToClipboard(colorId, event) {
+    event.stopPropagation();
+    const colorText = document.getElementById(colorId).textContent;
+    navigator.clipboard.writeText(`#${colorText}`).then(() => {
+        alert("Color code copied to clipboard!");
+    }).catch(err => {
+        console.error('Could not copy text: ', err);
+    });
+}

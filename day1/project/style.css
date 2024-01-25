@@ -29,6 +29,7 @@ main{
 }
 
 .color-container {
+    position: relative;
     cursor: pointer;
     flex-basis: calc(20% - 1rem);
     max-width: calc(20% - 1rem);
@@ -78,4 +79,13 @@ footer p {
         max-width: calc(100% - 2rem);
         height: 60vw;
     }
+}
+
+.copy-icon {
+    cursor: pointer;
+    position: absolute; /* Position it relative to the color container */
+    top: 8px; /* Adjust as needed */
+    right: 8px; /* Adjust as needed */
+    color: white; /* Choose a color that will stand out */
+    z-index: 10; /* Ensure it's above other content */
 }
