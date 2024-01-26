@@ -83,9 +83,9 @@ footer p {
 
 .copy-icon {
     cursor: pointer;
-    position: absolute; /* Position it relative to the color container */
-    top: 8px; /* Adjust as needed */
-    right: 8px; /* Adjust as needed */
-    color: white; /* Choose a color that will stand out */
-    z-index: 10; /* Ensure it's above other content */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: white; 
+    z-index: 10; 
 }
