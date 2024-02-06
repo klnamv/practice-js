@@ -11,7 +11,6 @@ body{
     background: #2d3047;
 }
 
-
 .container{
     display: flex;
     align-items: center;
@@ -87,6 +86,8 @@ body{
     font-weight: 600;
 }
 
+/* home page */
+
 .nav{
     background: white;
     display: flex;
@@ -108,14 +109,14 @@ body{
 
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
 }
 
 .main-box{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     width: 60%;
 }
 
@@ -124,5 +125,21 @@ main{
 }
 
 .bottom{
-    width: 100%
+    width: 60%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:840px) {
+    .main-box.top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    .top .box{
+        margin: 10 10;
+    }
+    .bottom{
+        margin-top: 0;
+    }
 }
