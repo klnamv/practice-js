@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Sixtyfour&display=swap');
 
 *{
     margin: 0;
@@ -57,14 +57,16 @@ body{
 }
 
 .btn{
-    height: 35px;
+    height: 40px;
     background: #3772FF;
     border: 0;
     border-radius: 10px;
     color: white;
     font-size: 15px;
     cursor: pointer;
+    transition: all .3s;
     margin-top: 10px;
+    padding: 0px 20px;
 }
 
 .btn:hover{
@@ -72,15 +74,55 @@ body{
 }
 
 .submit{
-    width: 10px;
+    width: 100%;
 }
 
 .link{
     text-align: center;
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .link a{
     color: #EA3788;
     font-weight: 600;
+}
+
+.nav{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.logo{
+    font-size:25px;
+    font-weight: 600;
+    color:#EA3788;
+}
+
+.right-links a{
+    padding: 0 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-box .top{
+    width: 60%;
+}
+
+.bottom{
+    width: 100%
 }
